@@ -1,2 +1,3 @@
-# resources
-A repository for commonly used resources, scripts, and reference material
+# Resources
+This repository is for commonly used resources, scripts, and reference material.
+
