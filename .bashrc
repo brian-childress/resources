@@ -1,3 +1,6 @@
+# Find and kill process(es) running on a given port, $1
+findandkill() {  port=$(lsof -n -i4TCP:$1 | grep LISTEN | awk '{ print $2 }')  kill -9 $port }
+
 # GIT Commands
 alias ga='git add -u' # GIT add only files that were modified or deleted, not untracked
 alias gb='git branch'
@@ -22,7 +25,8 @@ alias lsf='ls | grep  -i' # Fuzzy search of current directory lsf <string>
 alias rand='openssl rand -hex 32 | pbcopy' # Randomly generatea hex string and copy to clipboard
 alias mkdir='_mkdir() { mkdir -p "$1" && cd "$1" ;}; _mkdir' # Make new directory (nested) and change to that directory
 alias bashrc='code ~/.bashrc'
-
+alias killport=findandkill # killport 3000
+ 
 # CD'ing directories
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
