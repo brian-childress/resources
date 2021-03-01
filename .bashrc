@@ -1,5 +1,5 @@
 # Find and kill process(es) running on a given port, $1
-findandkill() {  port=$(lsof -n -i4TCP:$1 | grep LISTEN | awk '{ print $2 }')  kill -9 $port }
+findandkill() { lsof -i TCP:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9 }
 
 # GIT Commands
 alias ga='git add -u' # GIT add only files that were modified or deleted, not untracked
