@@ -17,6 +17,7 @@ alias dpa='docker ps -a'
 
 # Random
 alias code='open -a /Applications/Visual\ Studio\ Code.app/'
+alias pc='pbcopy' # pwd | pc
 alias la='ls -la'
 alias ll='ls -ll'
 alias ip='ifconfig en0 | grep inet'  # Get current ip address
