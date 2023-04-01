@@ -15,6 +15,9 @@ alias dc='docker-compose'
 alias dp='docker ps'
 alias dpa='docker ps -a'
 
+# AWS
+alias aws='_aws() {docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli "$@" --profile profle;}; _aws' # aws s3 ls
+
 # Random
 alias code='open -a /Applications/Visual\ Studio\ Code.app/'
 alias pc='pbcopy' # pwd | pc
