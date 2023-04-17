@@ -18,6 +18,9 @@ alias dpa='docker ps -a'
 # AWS
 alias aws='_aws() {docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli "$@" --profile profle;}; _aws' # aws s3 ls
 
+# GCP
+alias gcloud='_gcloud() {docker run -ti -e CLOUDSDK_CONFIG=/config/mygcloud -v `pwd`/mygcloud:/config/mygcloud google/cloud-sdk gcloud "$@";}; _gcloud' # gcloud projects describe
+
 # Random
 alias code='open -a /Applications/Visual\ Studio\ Code.app/'
 alias pc='pbcopy' # pwd | pc
