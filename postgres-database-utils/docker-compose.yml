@@ -20,7 +20,7 @@ services:
 
 volumes:
   postgres:
-    name: deq-db
+    name: db
 
 networks:
   my-network:
