@@ -1,3 +1,4 @@
+[Original Source](https://gist.github.com/iaincollins/92923cc2c309c2751aea6f1b34b31d95)
 # [short title of solved problem and solution]
 
 - Status: [accepted | superseded by [ADR-0005](0005-example.md) | deprecated | …] <!-- optional -->
